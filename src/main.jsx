@@ -2,16 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { KeycloakProvider } from '@react-keycloak/web';
 import keycloak from './keycloak';
 
-keycloak.init({ onLoad: 'login-required' }).then((authenticated) => {
-  if (authenticated) {
-    ReactDOM.createRoot(document.getElementById('root')).render(
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+   <KeycloakProvider keycloak={keycloak}>
+      <App />
+    </KeycloakProvider>
   </React.StrictMode>,
 )
-  } else {
-  console.error('Failed to authenticate');
-}
-});

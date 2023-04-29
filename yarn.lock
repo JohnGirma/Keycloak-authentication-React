@@ -732,6 +732,7 @@ __metadata:
     "@types/react-dom": ^18.0.9
     "@vitejs/plugin-react": ^3.0.0
     keycloak-js: ^21.1.1
+    keycloak-react-web: ^0.1.19
     react: ^18.2.0
     react-router-dom: ^6.10.0
     vite: ^4.0.0
@@ -1520,6 +1521,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keycloak-js@npm:^19.0.2":
+  version: 19.0.3
+  resolution: "keycloak-js@npm:19.0.3"
+  dependencies:
+    base64-js: ^1.5.1
+    js-sha256: ^0.9.0
+  checksum: 1da8217ed8276f1ac37e0a57dfe7a726cf55e1a75677bdd9a46b747b7247c73fb1acb9f241b3496ea4de5c7a209ebad834117099b66c93c56c4c2547106fabae
+  languageName: node
+  linkType: hard
+
 "keycloak-js@npm:^21.1.1":
   version: 21.1.1
   resolution: "keycloak-js@npm:21.1.1"
@@ -1527,6 +1538,15 @@ __metadata:
     base64-js: ^1.5.1
     js-sha256: ^0.9.0
   checksum: 73c0340bd39301336e95755b3304bf96d660600660ee4729c0e2e51463fdea3a8ddf767ac0e8b6284092cdd68006ecd81f3d461863543bfb55c70cd2458deab8
+  languageName: node
+  linkType: hard
+
+"keycloak-react-web@npm:^0.1.19":
+  version: 0.1.19
+  resolution: "keycloak-react-web@npm:0.1.19"
+  dependencies:
+    keycloak-js: ^19.0.2
+  checksum: 92a4017218e3835121e6425f4d84debb65bef8a8a0f359f753f4f2c81c6779648c7468673fe9eafbacab65dce2f5f4bde26dd46f3508f1db65439ac83532d1a0
   languageName: node
   linkType: hard
 

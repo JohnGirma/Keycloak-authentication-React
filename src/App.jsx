@@ -2,6 +2,8 @@ import { BrowserRouter as Router,  Route, Link } from 'react-router-dom';
 import Login from './Login';
 import Logout from './Logout';
 import Registration from './Registration';
+import Nice from './Nice'
+
 import SecureComponent from './SecureComponent';
 import { useKeycloak } from '@react-keycloak/web';
 import { Button } from '@material-ui/core';
@@ -24,6 +26,9 @@ function App() {
           <ul>
             <li>
               <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/hi">Home</Link>
             </li>
             {keycloak.authenticated ? (
               <>
@@ -57,6 +62,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Registration />
+          </Route>
+          <Route path="/hi">
+            <Nice />
           </Route>
           <Route path="/secure">
             <SecureComponent role="admin">

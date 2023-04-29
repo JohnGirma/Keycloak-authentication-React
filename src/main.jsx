@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { KeycloakProvider } from '@react-keycloak/web';
-import keycloak from './keycloak';
+import  {ReactKeycloakProvider} from '@react-keycloak/web';
+import keycloak from './keycloak.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <KeycloakProvider keycloak={keycloak}>
+   <ReactKeycloakProvider authClient={keycloak}>
       <App />
-    </KeycloakProvider>
+    </ReactKeycloakProvider>
   </React.StrictMode>,
 )
